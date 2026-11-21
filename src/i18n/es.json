@@ -1,0 +1,27 @@
+{
+  "title": "HORIZONTE",
+  "subtitle": "La Segunda Tormenta",
+  "loading": "Cargando",
+  "menu": {
+    "newGame": "Nueva partida",
+    "continue": "Continuar",
+    "settings": "Ajustes",
+    "teacher": "Panel del profesor",
+    "credits": "Créditos"
+  },
+  "countdown": "Segunda tormenta en",
+  "days": "días",
+  "phaseNote": "Fase 0 · Montaje completado. La base explorable llega en la Fase 1.",
+  "tips": [
+    "<b>Gravitación:</b> la energía potencial gravitatoria siempre es negativa si se toma el cero en el infinito.",
+    "<b>Órbitas:</b> en una órbita circular, la energía mecánica es la mitad de la potencial: Em = −GMm / 2r.",
+    "<b>Unidades:</b> el radio orbital se mide desde el centro de la Tierra, no desde la superficie.",
+    "<b>Campo eléctrico:</b> dentro de un conductor en equilibrio, el campo eléctrico es nulo.",
+    "<b>Magnetismo:</b> la fuerza magnética no hace trabajo: cambia la dirección de la velocidad, no su módulo.",
+    "<b>Ondas:</b> sumar decibelios no es sumar números: hay que sumar intensidades.",
+    "<b>Óptica:</b> la reflexión total solo ocurre al pasar de un medio más refringente a uno menos refringente.",
+    "<b>Física moderna:</b> por debajo de la frecuencia umbral no hay efecto fotoeléctrico, por intensa que sea la luz.",
+    "<b>Matrices:</b> el producto de matrices no es conmutativo: AB ≠ BA en general.",
+    "<b>Probabilidad:</b> P(A|B) y P(B|A) no son lo mismo. Bayes sirve precisamente para pasar de una a otra."
+  ]
+}

@@ -1,0 +1,24 @@
+# Blueprint de Render: crea la web del juego.
+# En Render: New → Blueprint → elegir este repositorio.
+# Las partidas se guardan en la base MySQL/MariaDB indicada en DATABASE_URL
+# (formato: mysql://usuario:contraseña@host:3306/basededatos).
+services:
+  - type: web
+    name: horizonte
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: node server/index.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: TEACHER_PASSWORD
+        sync: false # Render la pide al crear el servicio
+      - key: DATABASE_URL
+        sync: false # Render la pide al crear el servicio

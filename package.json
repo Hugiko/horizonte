@@ -1,0 +1,55 @@
+{
+  "name": "horizonte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b",
+    "start": "node server/index.js",
+    "dev:server": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "@fontsource/exo-2": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/orbitron": "^5.3.0",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
+    "@react-three/rapier": "^2.2.0",
+    "compression": "^1.8.2",
+    "express": "^5.3.0",
+    "howler": "^2.2.4",
+    "i18next": "^27.2.2",
+    "katex": "^0.19.1",
+    "mathjs": "^15.2.0",
+    "mysql2": "^3.24.6",
+    "pg": "^8.23.1",
+    "postprocessing": "^6.39.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-i18next": "^18.0.3",
+    "three": "^0.187.0",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.13",
+    "@types/katex": "^0.16.8",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.90.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

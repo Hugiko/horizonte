@@ -1,0 +1,513 @@
+{
+  "id": "F1.1",
+  "titulo": "PESAR MUNDOS",
+  "capitulo": "Capítulo 1 · Caída del cielo",
+  "fps": 30,
+  "poster": {
+    "plano": "mision",
+    "segundo": 1.6
+  },
+  "voces": {
+    "narrador": {
+      "motor": "elevenlabs",
+      "voiceId": "nPczCjzI2devNBz1zQrb",
+      "nombre": "Brian (ElevenLabs, voz estándar)",
+      "modelo": "eleven_v3",
+      "ajustes": {
+        "stability": 0.5
+      },
+      "etiqueta": "[dramatic]",
+      "natural": true,
+      "eco": 0.05
+    },
+    "vera": {
+      "motor": "elevenlabs",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "nombre": "Sarah (ElevenLabs, voz estándar)",
+      "modelo": "eleven_v3",
+      "ajustes": {
+        "stability": 0.5
+      },
+      "etiqueta": "[confident]",
+      "natural": true,
+      "eco": 0.03
+    }
+  },
+  "musica": [
+    {
+      "src": "musica/five-armies.mp3",
+      "plano": "carrington",
+      "desde": 0,
+      "hasta": 13.5,
+      "volumen": 0.7,
+      "fadeIn": 0.5,
+      "fadeOut": 1.2
+    },
+    {
+      "src": "musica/five-armies.mp3",
+      "plano": "apagon",
+      "hasta": 150.5,
+      "alinearFinal": true,
+      "volumen": 0.85,
+      "fadeIn": 0.15,
+      "fadeOut": 2.5
+    }
+  ],
+  "planos": [
+    {
+      "id": "carrington",
+      "tipo": "fecha",
+      "visual": "sol",
+      "duracion": 1.0,
+      "texto": "1859",
+      "subtexto": "EVENTO CARRINGTON",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "En mil ochocientos cincuenta y nueve, el Sol desató una tormenta que quemó los telégrafos del mundo.",
+        "inicio": 0.35,
+        "etiqueta": "[serious]"
+      },
+      "sfx": [
+        {
+          "nombre": "boom",
+          "en": 0,
+          "volumen": 0.7
+        },
+        {
+          "nombre": "whoosh",
+          "en": 0.2,
+          "volumen": 0.4
+        }
+      ]
+    },
+    {
+      "id": "2071",
+      "tipo": "fecha",
+      "visual": "tierra",
+      "duracion": 2.6,
+      "texto": "2071",
+      "subtexto": "HA VUELTO",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "En dos mil setenta y uno... ha vuelto.",
+        "inicio": 0.2,
+        "etiqueta": "[dramatic] [whispers]"
+      },
+      "sfx": [
+        {
+          "nombre": "tick",
+          "en": 0,
+          "volumen": 0.35
+        }
+      ]
+    },
+    {
+      "id": "apagon",
+      "tipo": "alerta",
+      "visual": "tierra-apagon",
+      "duracion": 4.0,
+      "texto": "APAGÓN TOTAL",
+      "lineas": [
+        "SATÉLITES · SIN SEÑAL",
+        "RED MEDITERRÁNEA · CAÍDA",
+        "COMUNICACIONES · 0 %"
+      ],
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Satélites muertos. El Mediterráneo, a oscuras.",
+        "inicio": 0.6,
+        "etiqueta": "[serious]"
+      },
+      "sfx": [
+        {
+          "nombre": "riser",
+          "en": -3.0,
+          "volumen": 0.6
+        },
+        {
+          "nombre": "braam",
+          "en": 0,
+          "volumen": 1
+        },
+        {
+          "nombre": "glitch",
+          "en": 0.05,
+          "volumen": 0.5
+        }
+      ]
+    },
+    {
+      "id": "nueve-meses",
+      "tipo": "fecha",
+      "visual": "sol-furia",
+      "duracion": 1.0,
+      "texto": "9 MESES",
+      "subtexto": "PARA LA SEGUNDA TORMENTA · MÁS FUERTE",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Y la segunda tormenta, más fuerte, llega en nueve meses.",
+        "inicio": 0.25
+      },
+      "sfx": [
+        {
+          "nombre": "hit",
+          "en": 0,
+          "volumen": 0.9
+        },
+        {
+          "nombre": "tick",
+          "en": 0.4,
+          "volumen": 0.3
+        }
+      ]
+    },
+    {
+      "id": "vera",
+      "tipo": "vera",
+      "visual": "base",
+      "duracion": 1.0,
+      "texto": "VERA",
+      "subtexto": "IA DE LA AGENCIA DEL MEDITERRÁNEO",
+      "voz": {
+        "locutor": "vera",
+        "texto": "Necesitamos un relé de emergencia. Y lo necesitamos ayer.",
+        "inicio": 0.3,
+        "etiqueta": "[sarcastic]"
+      },
+      "sfx": [
+        {
+          "nombre": "glitch",
+          "en": 0,
+          "volumen": 0.35
+        }
+      ]
+    },
+    {
+      "id": "aras",
+      "tipo": "hud",
+      "visual": "exoplaneta",
+      "duracion": 1.0,
+      "texto": "SEÑAL DETECTADA",
+      "subtexto": "OBSERVATORIO DE ARAS DE LOS OLMOS · UNIVERSITAT DE VALÈNCIA",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Aras de los Olmos detecta un mundo nuevo, junto a una estrella cercana.",
+        "inicio": 0.3
+      },
+      "sfx": [
+        {
+          "nombre": "whoosh",
+          "en": 0,
+          "volumen": 0.5
+        },
+        {
+          "nombre": "tick",
+          "en": 0.5,
+          "volumen": 0.25
+        }
+      ]
+    },
+    {
+      "id": "pesar",
+      "tipo": "palabras",
+      "visual": "exoplaneta-cerca",
+      "duracion": 1.0,
+      "palabras": [
+        "PESA LA ESTRELLA",
+        "PESA EL PLANETA"
+      ],
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Antes de lanzar nada, tendrás que pesarlos.",
+        "inicio": 0.1
+      },
+      "sfx": [
+        {
+          "nombre": "hit",
+          "en": 0,
+          "volumen": 0.7
+        },
+        {
+          "nombre": "hit",
+          "en": 1.4,
+          "volumen": 0.7
+        }
+      ]
+    },
+    {
+      "id": "sin-balanza",
+      "tipo": "palabras",
+      "visual": "exoplaneta",
+      "duracion": 1.0,
+      "palabras": [
+        "SU ÓRBITA",
+        "SU GRAVEDAD",
+        "SU VELOCIDAD DE ESCAPE"
+      ],
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Solo con su órbita, su gravedad... y su velocidad de escape.",
+        "inicio": 0.1
+      },
+      "sfx": [
+        {
+          "nombre": "whoosh",
+          "en": -0.3,
+          "volumen": 0.4
+        },
+        {
+          "nombre": "hit",
+          "en": 0,
+          "volumen": 0.6
+        },
+        {
+          "nombre": "hit",
+          "en": 1.25,
+          "volumen": 0.6
+        },
+        {
+          "nombre": "hit",
+          "en": 2.5,
+          "volumen": 0.85
+        }
+      ]
+    },
+    {
+      "id": "vida-real",
+      "tipo": "seccion",
+      "visual": "estrellas",
+      "duracion": 1.0,
+      "texto": "EN LA VIDA REAL",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Así se pesan estrellas, planetas... y agujeros negros.",
+        "inicio": 0.35
+      },
+      "sfx": [
+        {
+          "nombre": "boom",
+          "en": 0,
+          "volumen": 0.8
+        }
+      ]
+    },
+    {
+      "id": "webb",
+      "tipo": "hud",
+      "visual": "webb",
+      "duracion": 1.0,
+      "texto": "JAMES WEBB · LHS 475b",
+      "subtexto": "2023 · EXOPLANETA ROCOSO A 41 AÑOS LUZ",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "El James Webb lo hizo con L H S cuatrocientos setenta y cinco b.",
+        "inicio": 0.15
+      },
+      "sfx": [
+        {
+          "nombre": "whoosh",
+          "en": 0,
+          "volumen": 0.4
+        }
+      ]
+    },
+    {
+      "id": "gps",
+      "tipo": "hud",
+      "visual": "tierra-orbitas",
+      "duracion": 1.0,
+      "texto": "GPS · SATÉLITES GEOESTACIONARIOS",
+      "subtexto": "LAS MISMAS LEYES DISEÑAN SUS ÓRBITAS",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Y así se diseñan las órbitas del GPS.",
+        "inicio": 0.1
+      },
+      "sfx": [
+        {
+          "nombre": "whoosh",
+          "en": 0,
+          "volumen": 0.4
+        }
+      ]
+    },
+    {
+      "id": "clave",
+      "tipo": "seccion",
+      "visual": "negro",
+      "duracion": 1.5,
+      "texto": "LA CLAVE",
+      "sfx": [
+        {
+          "nombre": "hit",
+          "en": 0,
+          "volumen": 0.9
+        }
+      ]
+    },
+    {
+      "id": "pista-1",
+      "tipo": "pista",
+      "visual": "orbita-vectores",
+      "duracion": 1.0,
+      "texto": "LA GRAVEDAD ES LA FUERZA CENTRÍPETA DE LA ÓRBITA",
+      "formula": "F gravitatoria = F centrípeta",
+      "voz": {
+        "locutor": "vera",
+        "texto": "Pista: la gravedad es la fuerza centrípeta de la órbita.",
+        "inicio": 0.15,
+        "etiqueta": "[confident]"
+      },
+      "sfx": [
+        {
+          "nombre": "tick",
+          "en": 0,
+          "volumen": 0.3
+        }
+      ]
+    },
+    {
+      "id": "pista-2",
+      "tipo": "pista",
+      "visual": "orbita-vectores",
+      "duracion": 1.0,
+      "texto": "EL PERIODO Y EL RADIO DELATAN LA MASA",
+      "formula": "T · r  →  M",
+      "voz": {
+        "locutor": "vera",
+        "texto": "El periodo y el radio delatan la masa.",
+        "inicio": 0.1
+      },
+      "sfx": [
+        {
+          "nombre": "tick",
+          "en": 0,
+          "volumen": 0.3
+        }
+      ]
+    },
+    {
+      "id": "pista-3",
+      "tipo": "pista",
+      "visual": "escape",
+      "duracion": 1.0,
+      "texto": "LA VELOCIDAD DE ESCAPE UNE g CON R",
+      "formula": "v escape  ↔  g · R",
+      "voz": {
+        "locutor": "vera",
+        "texto": "Y la velocidad de escape... une la gravedad con el radio.",
+        "inicio": 0.1
+      },
+      "sfx": [
+        {
+          "nombre": "tick",
+          "en": 0,
+          "volumen": 0.3
+        }
+      ]
+    },
+    {
+      "id": "kepler",
+      "tipo": "palabras",
+      "visual": "exoplaneta",
+      "duracion": 1.0,
+      "palabras": [
+        "KEPLER LO DESCUBRIÓ",
+        "NEWTON LO EXPLICÓ",
+        "AHORA TÚ"
+      ],
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Kepler lo descubrió. Newton lo explicó. Ahora... tú.",
+        "inicio": 0.05,
+        "etiqueta": "[dramatic]"
+      },
+      "sfx": [
+        {
+          "nombre": "hit",
+          "en": 0,
+          "volumen": 0.7
+        },
+        {
+          "nombre": "hit",
+          "en": 1.9,
+          "volumen": 0.75
+        },
+        {
+          "nombre": "hit",
+          "en": 3.8,
+          "volumen": 0.9
+        },
+        {
+          "nombre": "riser",
+          "en": 2.4,
+          "volumen": 0.75
+        }
+      ]
+    },
+    {
+      "id": "mision",
+      "tipo": "titulo-mision",
+      "visual": "exoplaneta-cerca",
+      "duracion": 3.8,
+      "texto": "PESAR MUNDOS",
+      "subtexto": "CAPÍTULO 1 · CAÍDA DEL CIELO",
+      "etiqueta": "MISIÓN F1.1",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Capítulo uno. Pesar mundos.",
+        "inicio": 0.7,
+        "etiqueta": "[dramatic]"
+      },
+      "sfx": [
+        {
+          "nombre": "braam",
+          "en": 0,
+          "volumen": 1
+        },
+        {
+          "nombre": "boom",
+          "en": 0,
+          "volumen": 0.7
+        }
+      ]
+    },
+    {
+      "id": "lema",
+      "tipo": "lema",
+      "visual": "negro",
+      "duracion": 1.0,
+      "texto": "CALCULA ANTES DE LANZAR",
+      "voz": {
+        "locutor": "narrador",
+        "texto": "Calcula antes de lanzar.",
+        "inicio": 0.2,
+        "etiqueta": "[dramatic] [shouting]"
+      },
+      "sfx": [
+        {
+          "nombre": "hit",
+          "en": 0,
+          "volumen": 0.8
+        }
+      ]
+    },
+    {
+      "id": "logo",
+      "tipo": "logo",
+      "visual": "tierra-logo",
+      "duracion": 3.6,
+      "texto": "HORIZONTE",
+      "subtexto": "AGENCIA DEL MEDITERRÁNEO · 2071",
+      "creditos": "Música: «Five Armies», Kevin MacLeod (incompetech.com) · CC BY 4.0 · Texturas: Solar System Scope · CC BY 4.0 · Voz: síntesis neuronal",
+      "sfx": [
+        {
+          "nombre": "boom",
+          "en": 0.1,
+          "volumen": 0.6
+        }
+      ]
+    }
+  ],
+  "subtitulos": true
+}
